@@ -1,0 +1,97 @@
+{
+  "run_id": "2026-11-03-independent-01",
+  "fixture_root": "<temporary-evaluation-directory>",
+  "repository": "<temporary-evaluation-directory>/repository",
+  "skill": "<temporary-evaluation-directory>/jim-code-review",
+  "base_commit": "df0949b67e7d78c97c0f235c4d0aa76fae780aed",
+  "model": "inherited parent model; exact identifier not exposed",
+  "cases": [
+    {
+      "file": "module_14.py",
+      "defect": false,
+      "cause": "Bound title remains literal",
+      "source_case": "lookup_safe"
+    },
+    {
+      "file": "module_27.py",
+      "defect": true,
+      "cause": "Omitted list shares state across independent calls",
+      "source_case": "append_label"
+    },
+    {
+      "file": "module_31.py",
+      "defect": false,
+      "cause": "Single transaction rolls back both updates",
+      "source_case": "rename_pair_safe"
+    },
+    {
+      "file": "module_46.py",
+      "defect": true,
+      "cause": "Title changes SQL predicate through interpolation",
+      "source_case": "lookup"
+    },
+    {
+      "file": "module_52.py",
+      "defect": false,
+      "cause": "New default list per call",
+      "source_case": "append_label_safe"
+    },
+    {
+      "file": "module_68.py",
+      "defect": true,
+      "cause": "First commit survives failure of second update",
+      "source_case": "rename_pair"
+    },
+    {
+      "file": "module_19.mjs",
+      "defect": false,
+      "cause": "Newer current editor text is retained",
+      "holdout": false
+    },
+    {
+      "file": "module_73.mjs",
+      "defect": true,
+      "cause": "Saved older snapshot replaces newer editor text",
+      "holdout": false
+    },
+    {
+      "file": "module_84.mjs",
+      "defect": true,
+      "cause": "Explicit zero limit is replaced with ten",
+      "holdout": true
+    },
+    {
+      "file": "module_95.mjs",
+      "defect": false,
+      "cause": "Nullish default preserves explicit zero",
+      "holdout": true
+    }
+  ],
+  "skill_sha256": {
+    "SKILL.md": "b8e99a003a549bda2999117f5f6ffb4bb5289858acbe9fe8b4231968dcb45ed7",
+    "agents/openai.yaml": "c174153df47c6c93bed59d2634ad02df9672b8a92e2ab9ee8fc356dd571d9284",
+    "references/languages/python.md": "6c258ab1299d93da5c85a64092d069d902a6cc2f1a0b95f8643aeebfbc74e458",
+    "references/languages/react-typescript.md": "a7579ebcd742c02e63b883ec33cf12e8e69f189b71fdcf3ef4e857d75a661864",
+    "references/languages/rust.md": "a8d50b6706825fed32b9475d786c004ffb987e70f0ca518b1b4281ee43dcf066",
+    "references/languages/shell.md": "0278c2a1202eccdb3a520b076b1137c06a2165f0715c9e8a75abf7f78ace83b8",
+    "references/languages/sqlite.md": "41eb4ec8cfa6efd4cc101df227b4c1ef02a6c8e673fe16f9a9887f7253ff23d1",
+    "references/languages/swift.md": "765f1b7d3cdd875769f3dd97809aff669e606107be3c7cc5caef04f5960ec046",
+    "references/languages/tauri.md": "2700e1a80075eafe9540f07ad958dec9729ed49bd90d93271bec93dd442f57d8",
+    "references/project-rules.md": "5572fd92184b89f50b7c144e45d2f28aba3ebb5b1aae5b205594a646afeb5221",
+    "references/review-modes.md": "7576fddf404ec0fbac4df4eb8411b33dc6a0449202e726b71d4475ceb3c887f4",
+    "references/shared.md": "d71eaa1b87b69998c9f4c4e5d3b1dcf7965d0d2ef1157275732ef9c3c6a82634"
+  },
+  "target_sha256": {
+    "module_14.py": "8ea31029c6a2fd3af70d00cf0575bc36b2c9a41c73517f739d4ddb003b7e1734",
+    "module_19.mjs": "6f35c63968e536210e323b9cc659102c73f8ce9a8d4ebf3648985ad051d47267",
+    "module_27.py": "ee216ef0cccdcdbef529fca50fd03d70071f7fa1fa048d8ebde16e995a0d52ba",
+    "module_31.py": "03d401e7eaaa49c0fc2df4d9d5530b46a37ea40bd51f44292e44eb35b1754ad7",
+    "module_46.py": "f25226107b4a03318c15a8cf25f34e17dfc27034c8bafd623878540a1f919f50",
+    "module_52.py": "463c1c34ae231790ca383c0a4f97e71b8305b9c491a1c9db818954bd2f39b4d6",
+    "module_68.py": "fc3fbf6b2b6c528286a4a0980cb41a057a38b411361d9aa39be5e5323518f5ca",
+    "module_73.mjs": "912c9efa577b4cf5a174958204a1676703b49277e3dc550dae7057e2b855cd54",
+    "module_84.mjs": "3209ae616a11ad157f4f1fa1e902ed1e1fc4f5c029c530000b5744ca9399bc2c",
+    "module_95.mjs": "8b0e1719ba142b9bb027e062b7afd9343aa908c4eeb47a807a475a5a81d8cfc3"
+  },
+  "path_note": "Local machine paths replaced with a portable placeholder for privacy; recorded hashes and results are unchanged."
+}

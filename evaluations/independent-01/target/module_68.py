@@ -1,0 +1,8 @@
+import sqlite3
+
+def apply(db, title):
+    """Either update both rows or leave both unchanged on failure."""
+    db.execute('UPDATE notes SET title=? WHERE id=1', (title,))
+    db.commit()
+    db.execute('UPDATE notes SET title=? WHERE id=2', (title,))
+    db.commit()

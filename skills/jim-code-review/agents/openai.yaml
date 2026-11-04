@@ -1,0 +1,3 @@
+interface:
+  display_name: "Jim Code Review"
+  short_description: "Review Git changes for evidence-backed defects"

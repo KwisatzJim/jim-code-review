@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-02",
+  "kind": "same-session-known-answer-self-check",
+  "model": "not exposed",
+  "skill_sha256": {
+    "skills/jim-code-review/SKILL.md": "80efb5778a212dfcd76849c1daa81cc5996d775d30751f2ffb0b01bb2e7d2cad",
+    "skills/jim-code-review/agents/openai.yaml": "c174153df47c6c93bed59d2634ad02df9672b8a92e2ab9ee8fc356dd571d9284",
+    "skills/jim-code-review/references/languages/python.md": "6c258ab1299d93da5c85a64092d069d902a6cc2f1a0b95f8643aeebfbc74e458",
+    "skills/jim-code-review/references/languages/react-typescript.md": "a7579ebcd742c02e63b883ec33cf12e8e69f189b71fdcf3ef4e857d75a661864",
+    "skills/jim-code-review/references/languages/rust.md": "a8d50b6706825fed32b9475d786c004ffb987e70f0ca518b1b4281ee43dcf066",
+    "skills/jim-code-review/references/languages/shell.md": "0278c2a1202eccdb3a520b076b1137c06a2165f0715c9e8a75abf7f78ace83b8",
+    "skills/jim-code-review/references/languages/sqlite.md": "41eb4ec8cfa6efd4cc101df227b4c1ef02a6c8e673fe16f9a9887f7253ff23d1",
+    "skills/jim-code-review/references/languages/swift.md": "765f1b7d3cdd875769f3dd97809aff669e606107be3c7cc5caef04f5960ec046",
+    "skills/jim-code-review/references/languages/tauri.md": "2700e1a80075eafe9540f07ad958dec9729ed49bd90d93271bec93dd442f57d8",
+    "skills/jim-code-review/references/project-rules.md": "5572fd92184b89f50b7c144e45d2f28aba3ebb5b1aae5b205594a646afeb5221",
+    "skills/jim-code-review/references/review-modes.md": "a23b82bf0bfaacad130aa1c7917e5775525a58aabb376efd0dc2686a2284d143",
+    "skills/jim-code-review/references/shared.md": "d71eaa1b87b69998c9f4c4e5d3b1dcf7965d0d2ef1157275732ef9c3c6a82634"
+  },
+  "known_bugs_found": 4,
+  "known_bugs_missed": 0,
+  "safe_cases_flagged": 0,
+  "independent_accuracy_estimate": false,
+  "runtime": {
+    "python": "3.15.2",
+    "node": "26.13.0"
+  },
+  "checks": {
+    "python_witnesses": {
+      "passed": 6,
+      "total": 6
+    },
+    "node_witnesses": {
+      "passed": 2,
+      "total": 2
+    },
+    "git_scope_test": {
+      "passed": 1,
+      "total": 1
+    },
+    "pilot_formatting_tests": {
+      "passed": 2,
+      "total": 2
+    }
+  },
+  "pilot_commit": "f03ec54f60a8424f403cea2931aaf4bda8d3f3ce",
+  "pilot_confirmed_findings": 0,
+  "pilot_refuted_candidates": 1
+}

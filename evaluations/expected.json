@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {"id":"PY-DEFAULT","file":"cases/python_cases.py","symbol":"append_label","defect":true,"cause":"Shared mutable default retains labels across otherwise independent calls","line":5},
+    {"id":"PY-DEFAULT-SAFE","file":"cases/python_cases.py","symbol":"append_label_safe","defect":false,"reason":"Each omitted argument creates a new list"},
+    {"id":"DB-ATOMIC","file":"cases/python_cases.py","symbol":"rename_pair","defect":true,"cause":"First commit survives failure updating second row, violating all-or-nothing contract","line":22},
+    {"id":"DB-ATOMIC-SAFE","file":"cases/python_cases.py","symbol":"rename_pair_safe","defect":false,"reason":"Transaction context rolls back on second update failure"},
+    {"id":"DB-QUERY","file":"cases/python_cases.py","symbol":"lookup","defect":true,"cause":"User title changes query predicate through string interpolation","line":36},
+    {"id":"DB-QUERY-SAFE","file":"cases/python_cases.py","symbol":"lookup_safe","defect":false,"reason":"Bound query treats supplied title as literal data"},
+    {"id":"JS-STALE","file":"cases/save_cases.mjs","symbol":"acknowledge","defect":true,"cause":"Older save response replaces newer current editor text","line":3},
+    {"id":"JS-STALE-SAFE","file":"cases/save_cases.mjs","symbol":"acknowledgeSafe","defect":false,"reason":"Identity/content comparison preserves newer current text"}
+  ]
+}
